@@ -8,6 +8,7 @@ const CampaignsController = require('../controllers/campaigns');
 
 router.get("/", authenticate, CampaignsController.get_all_campaigns);
 router.get("/active", authenticate, CampaignsController.get_all_active_campaigns);
+router.get("/closed", authenticate, CampaignsController.get_all_closed_campaigns);
 
 
 
